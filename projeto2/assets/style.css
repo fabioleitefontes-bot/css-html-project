@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* === BARRA DE NAVEGAÇÃO (HEADER) === */
+.pesquisa{
+    display: flex;
+    max-width: 1440px; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 56px;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0; 
+}
+
+/* LOGO E MENU */
+#logo{
+    display: flex;
+    width:146px;
+    height: 24px;
+    gap: 16px;
+    
+    margin-left: 0;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    flex-shrink: 0;
+    margin-left: -16px;
+}
+#menu{
+    width:24px;
+    height: 24px;
+    margin-left: 0;
+}
+#logo-youtube{
+    width: 90px;
+    height: 20px;
+}
+
+/* BLOCO CENTRAL DE PESQUISA */
+#barra-pesquisa{
+    max-width: 640px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-grow: 1; 
+}
+
+#barra-pesquisa input[type="text"] {
+    flex-grow: 1; 
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-right: none; 
+    border-radius: 20px 0 0 20px; 
+}
+
+#lupa{
+    width: 57px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-left: none; 
+    background-color: #f8f8f8;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+#lupa img{
+    width: 24px;
+    height: 24px;
+}
+
+/* BLOCO DA CONTA (Direita) */
+#conta{
+    width: 130px;
+    height: 34px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 12px;
+    margin-right: 0;
+}
+#video img, #notificacoes img{
+    width: 24px;
+    height: 24px;
+}
+#avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* === CONTEÚDO PRINCIPAL (MAIN) === */
+.container-principal {
+    display: flex;
+    max-width: 1440px;
+    margin: 24px auto; 
+    padding: 0 24px;
+    gap: 24px; 
+    align-items: flex-start; 
+}
+
+.video-player {
+    flex-grow: 1; 
+    max-width: 900px; 
+}
+
+.video-title {
+    font-size: 20px; 
+    font-weight: 600; 
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+
+#chanel-info {
+    display: flex;
+   
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 902px;
+    height: 42px; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+
+.channel-group {
+    display: flex;
+    align-items: center;
+    gap: 24px; 
+}
+
+/* Sub-grupo do Avatar e Texto */
+.text-and-avatar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.channel-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* GRUPO DE TEXTO */
+.text-info {
+    /* Faz o nome e os inscritos ficarem LADO A LADO */
+    display: flex;
+    flex-direction: column; 
+    align-items: start; 
+    font-size: 14px;
+    gap: 8px; 
+}
+
+/* Estilos de Texto */
+.channel-name-title {
+    font-weight: 600; 
+    font-size: 14px;
+}
+.subscribers {
+    font-weight: 400;
+    font-size: 12px;
+    
+}
+
+/* Botão de Inscrição */
+.subscribe-button {
+    display: flex;
+    background-color: #CC0000; 
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 3px;
+    gap: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: center;
+    margin-left:16px ;
+}
+
+
+.actions-group {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.actions-group button {
+
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 11px;
+    border: none;
+    border-radius: 20px; /* Botões arredondados */
+    cursor: pointer;
+}
+
+
+/* DESCRIÇÃO DO VÍDEO */
+.video-description {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+.video-description .stats {
+    font-size: 14px;
+    font-weight: 400;
+    
+    margin-bottom: 8px;
+}
+.video-description .text {
+    font-size: 14px;
+    line-height: 1.5;
+    flex-direction: column;
+}
+
+
+/* BARRA LATERAL (SUGESTÕES) */
+.side-bar {
+    width: 380px; 
+    flex-shrink: 0; 
+}
+.sidebar-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* CARD DE SUGESTÃO */
+.suggestion-card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px; 
+}
+.suggestion-card .thumbnail img {
+    width: 168px;
+    height: auto;
+    border-radius: 4px;
+}
+.suggestion-card .card-info {
+    font-size: 13px;
+    line-height: 1.4;
+}
+.card-title {
+    font-weight: 600;
+    color: #000;
+}
+.channel-name, .card-stats {
+    color: #606060;
+}
